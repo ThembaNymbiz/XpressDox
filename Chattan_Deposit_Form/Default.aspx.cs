@@ -96,7 +96,7 @@ namespace Chattan_Deposit_Form
             sr.Close();
             res.Close();
 
-
+            #region
             //Code to convert the string response to XML so we can find the download link using XML functions
             //Code below just loads the response string to XML var then we just search for the DowloadLink node then BOOM its there (*_*)
             XmlDocument xmldoc = new XmlDocument();
@@ -109,8 +109,9 @@ namespace Chattan_Deposit_Form
                 txtXML_Input.Text = Short_Fall;
                 Response.Redirect(Short_Fall);
             }
+            #endregion
         }
-           
+
 
 
         protected void Page_Load(object sender, EventArgs e)
